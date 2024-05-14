@@ -8,7 +8,7 @@ namespace StudentAttendanceManagementSystem
         static void Main()
         {
             ApplicationConfiguration.Initialize();
-            Application.Run(new Abiturient());
+            Application.Run(new Login());
         }
     }
 }
