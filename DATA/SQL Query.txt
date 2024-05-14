@@ -1,0 +1,36 @@
+Data Source= ;Initial Catalog= ;Integrated Security=True;Encrypt=False
+
+create database ApplicantAttendance_DB
+use ApplicantAttendance_DB
+
+create table Hudud(
+	HududId int primary key identity(1, 1) not null,
+	HududNomi varchar(100) not null
+);
+
+create table Oliygoh(
+	OliygohId int primary key identity(1, 1) not null,
+	OliygohNomi varchar(50) not null
+);
+
+create table Yonalish(
+	YonalishId int primary key identity(1, 1) not null,
+	YonalishNomi varchar(50) not null
+);
+
+create table Imtihon(
+	ImtihonId int primary key identity(1, 1) not null,
+	ImtihonNomi varchar(50) not null
+);
+
+create table Abiturient(
+	AbiturientId int primary key identity(1, 1) not null,
+	Ismi varchar(50) not null,
+	Familiyasi varchar(50) not null,
+	OtasiningIsmi varchar(50),
+	JSHSHIR int not null,
+	OliygohId int not null,
+	YonalishId int,
+	HududId int not null,
+	ImtihonId int
+);
